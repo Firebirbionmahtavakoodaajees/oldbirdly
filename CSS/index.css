@@ -187,6 +187,7 @@ body {
   position: absolute; /* Position the div relative to its parent */
   bottom: -100dvh; /* Align it to the bottom of the parent container */
   opacity: 0;
+  background-color: red;
 }
 
 @keyframes waterAnim {

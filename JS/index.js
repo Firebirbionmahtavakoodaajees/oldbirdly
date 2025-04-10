@@ -28,16 +28,14 @@ function buttonClicked() {
 
 function pageLoaded() {
     document.querySelector('.loaded-wave').style.setProperty('animation', 'loadedWaveAnim 1s linear forwards');
-    setTimeout(loadedWater, 175);
-
+    loadedWater();
+    startAnim();
     function loadedWater() {
         document.querySelector('.loaded-water').style.setProperty('opacity', '1');
-        setTimeout(startAnim, 1000);
-        
+    }
 
-        function startAnim() {
-            document.querySelector('.loaded-water').style.setProperty('animation', 'loadedWaterAnim 1s linear forwards');
-        }
+    function startAnim() {
+        document.querySelector('.loaded-water').style.setProperty('animation', 'loadedWaterAnim 1s linear forwards');
     }
 
 }
