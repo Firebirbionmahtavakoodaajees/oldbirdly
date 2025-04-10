@@ -8,7 +8,7 @@ function buttonClicked() {
     const button = document.querySelector('.round-button');
     button.classList.add('animate-droplet');
 
-    setTimeout(waterWave, 5);
+    setTimeout(waterWave, 1);
     afterWave();
 
     setTimeout(redirect, 1000);
@@ -34,10 +34,13 @@ function buttonClicked() {
 
 function pageLoaded() {
     document.querySelector('.loaded-wave').style.setProperty('animation', 'loadedWaveAnim 1s linear forwards');
-    setTimeout(loadedWater, 175);
-
+    loadedWater();
+    startAnim();
     function loadedWater() {
         document.querySelector('.loaded-water').style.setProperty('opacity', '1');
+    }
+
+    function startAnim() {
         document.querySelector('.loaded-water').style.setProperty('animation', 'loadedWaterAnim 1s linear forwards');
     }
 
