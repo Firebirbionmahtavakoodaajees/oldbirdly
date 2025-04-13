@@ -38,6 +38,7 @@ body {
     /* Floating margin */
     box-shadow: 0 8px 25px rgba(0, 0, 0, 0.4);
     max-height: 7dvh;
+    z-index: 1;
 }
 
 /* Navbar buttons styling */
