@@ -4,23 +4,16 @@
 <script src="JS/index.js" defer>
     //use async for faster loading but load code in no order
     //use defer to load code in order
-
-    // Function to detect mobile devices
-    function isMobileDevice() {
-        return /Mobi|Android/i.test(navigator.userAgent);
-    }
-
-    // Redirect mobile users
-    if (isMobileDevice()) {
-        window.location.href = 'https://www.youtube.com/watch?v=dQw4w9WgXcQ'; // Replace with your mobile URL
-    }
-
 </script>
+
+<style>
+
+</style>
 
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Highlights</title>
+    <title>MAYK</title>
     <meta name="description" content="Ruikkuli">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="CSS/index.css">
@@ -43,11 +36,23 @@
             <a href="about.html">About</a>
             <a href="collections.html">Collections</a>
         </div>
-        <img src="Assets/Birdly-logos-Circular.png" class="logo-picture" alt="LOGO" style="width:2.5%;"> 
+        <img src="Assets/Birdly-logos-Circular.png" class="logo-picture" alt="LOGO" style="width:2.5%;">
     </div>
 
     <div class="Main">
 
+          <!-- Background elements -->
+       <div class="background default-bg"></div>
+       <div class="background image-bg" id="bg1"></div>
+       <div class="background image-bg" id="bg2"></div>
+
+
+        <div class="button-container">
+            <button onclick="window.location.href='https://birdly.pixieset.com/maykvappu2025ruikkutuikku/';">Vappu</button>
+            <button onclick="window.location.href='https://www.example.com';">Videos</button>
+        </div>
+
+               
 
 
     </div>
